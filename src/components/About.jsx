@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { services } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
+import { SectionWrapper } from '../hoc';
 
 const ServicesCard = ({index,title,icon}) => {
   return(
@@ -32,8 +33,10 @@ const About = () => {
   return (
     <div>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <p className={styles.sectionSubText}>INTRODUCCIÓN
+
+        </p>
+        <h2 className={styles.sectionHeadText}>Descripción.</h2>
       </motion.div>
       <motion.p
         variants={fadeIn("","",0.1,1)}
@@ -58,4 +61,4 @@ const About = () => {
   )
 }
 
-export default About
+export default SectionWrapper(About,"about");
