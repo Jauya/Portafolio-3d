@@ -36,7 +36,7 @@ import {
     },
     {
       id: "contact",
-      title: "Cantactos",
+      title: "Contactos",
     },
   ];
   
